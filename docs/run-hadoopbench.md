@@ -39,7 +39,7 @@ Property        |      Meaning
 hibench.masters.hostnames     |     Hadoop master node in your installation. For our MapR, it is nodo1mapr
 hibench.slaves.hostnames   |        Hadoop slaves nodes in your installation. For our MapR, it is nodo2mapr,nodo3mapr,nodo4mapr
 
-Note: For CDH, HDP and MapR users, please update `hibench.masters.hostnames`, `hibench.slaves.hostnames` and `hibench.hadoop.release` properly. 
+Note: For CDH, HDP and MapR users, please update `hibench.masters.hostnames`, `hibench.slaves.hostnames` properly. 
 
 ### 4. Run a workload ###
 To run a single workload i.e. `wordcount`.
