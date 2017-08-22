@@ -30,8 +30,18 @@ hibench.hadoop.release    |    Hadoop release provider. Supported value: apache 
 
 Note: For CDH, HDP and MapR users, please update `hibench.hadoop.executable`, `hibench.hadoop.configure.dir` and `hibench.hadoop.release` properly. The default value is for Apache release.
 
+### 3. Configure `hibench.conf` ###
 
-### 3. Run a workload ###
+Set the below properties properly:
+
+Property        |      Meaning
+----------------|--------------------------------------------------------
+hibench.masters.hostnames     |     Hadoop master node in your installation. For our MapR, it is nodo1mapr
+hibench.slaves.hostnames   |        Hadoop slaves nodes in your installation. For our MapR, it is nodo2mapr,nodo3mapr,nodo4mapr
+
+Note: For CDH, HDP and MapR users, please update `hibench.masters.hostnames`, `hibench.slaves.hostnames` and `hibench.hadoop.release` properly. 
+
+### 4. Run a workload ###
 To run a single workload i.e. `wordcount`.
 
      bin/workloads/micro/wordcount/prepare/prepare.sh
@@ -40,7 +50,7 @@ To run a single workload i.e. `wordcount`.
 The `prepare.sh` launches a Hadoop job to generate the input data on HDFS. The `run.sh` submits a Hadoop job to the cluster.
 `bin/run_all.sh` can be used to run all workloads listed in conf/benchmarks.lst and conf/frameworks.lst.
 
-### 4. View the report ###
+### 5. View the report ###
 
    The `<HiBench_Root>/report/hibench.report` is a summarized workload report, including workload name, execution duration, data size, throughput per cluster, throughput per node.
 
@@ -50,11 +60,11 @@ The `prepare.sh` launches a Hadoop job to generate the input data on HDFS. The `
   * `<workload>/hadoop/monitor.html`: System utilization monitor results.
   * `<workload>/hadoop/conf/<workload>.conf`: Generated environment variable configurations for this workload.
 
-### 5. Input data size ###
+### 6. Input data size ###
 
    To change the input data size, you can set `hibench.scale.profile` in `conf/hibench.conf`. Available values are tiny, small, large, huge, gigantic and bigdata. The definition of these profiles can be found in the workload's conf file i.e. `conf/workloads/micro/wordcount.conf`
 
-### 6. Tuning ###
+### 7. Tuning ###
 
 Change the below properties in `conf/hibench.conf` to control the parallelism.
 
