@@ -43,7 +43,12 @@ hibench.slaves.hostnames   |        Hadoop slaves nodes in your installation. Fo
 
 Note: For CDH, HDP and MapR users, please update `hibench.masters.hostnames`, `hibench.slaves.hostnames` properly. 
 
-### 4. Run a workload ###
+### 4. Give permissions to HDFS user or MapR user ###
+
+chown -R hdfs The HiBench installation location. For CDH and HDP installation, it is /opt/HiBench_TFG_UNED. 
+chown -R mapr The HiBench installation location. For MapR installation, it is /opt/HiBench_TFG_UNED. 
+
+### 5. Run a workload ###
 To run a single workload i.e. `dfsioe`.
 
      bin/workloads/micro/dfsioe/prepare/prepare.sh
@@ -51,7 +56,7 @@ To run a single workload i.e. `dfsioe`.
 
 The `prepare.sh` launches a Hadoop job to generate the input data on HDFS. The `run.sh` submits a Hadoop job to the cluster.
 
-### 5. View the report ###
+### 6. View the report ###
 
    The `<HiBench_Root>/report/hibench.report` is a summarized workload report, including workload name, execution duration, data size, throughput per cluster, throughput per node.
 
@@ -61,11 +66,11 @@ The `prepare.sh` launches a Hadoop job to generate the input data on HDFS. The `
   * `<workload>/hadoop/monitor.html`: System utilization monitor results.
   * `<workload>/hadoop/conf/<workload>.conf`: Generated environment variable configurations for this workload.
 
-### 6. Input data size ###
+### 7. Input data size ###
 
    To change the input data size, you can set `hibench.scale.profile` in `conf/hibench.conf`. Available values are tiny, small, large, huge, gigantic and bigdata. The definition of these profiles can be found in the workload's conf file i.e. `conf/workloads/micro/dfsioe.conf`
 
-### 7. Tuning ###
+### 8. Tuning ###
 
 Change the below properties in `conf/hibench.conf` to control the parallelism.
 
