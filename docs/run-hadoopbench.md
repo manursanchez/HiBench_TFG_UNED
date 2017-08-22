@@ -44,13 +44,12 @@ hibench.slaves.hostnames   |        Hadoop slaves nodes in your installation. Fo
 Note: For CDH, HDP and MapR users, please update `hibench.masters.hostnames`, `hibench.slaves.hostnames` properly. 
 
 ### 4. Run a workload ###
-To run a single workload i.e. `wordcount`.
+To run a single workload i.e. `dfsioe`.
 
-     bin/workloads/micro/wordcount/prepare/prepare.sh
-     bin/workloads/micro/wordcount/hadoop/run.sh
+     bin/workloads/micro/dfsioe/prepare/prepare.sh
+     bin/workloads/micro/dfsioe/hadoop/run.sh
 
 The `prepare.sh` launches a Hadoop job to generate the input data on HDFS. The `run.sh` submits a Hadoop job to the cluster.
-`bin/run_all.sh` can be used to run all workloads listed in conf/benchmarks.lst and conf/frameworks.lst.
 
 ### 5. View the report ###
 
@@ -64,7 +63,7 @@ The `prepare.sh` launches a Hadoop job to generate the input data on HDFS. The `
 
 ### 6. Input data size ###
 
-   To change the input data size, you can set `hibench.scale.profile` in `conf/hibench.conf`. Available values are tiny, small, large, huge, gigantic and bigdata. The definition of these profiles can be found in the workload's conf file i.e. `conf/workloads/micro/wordcount.conf`
+   To change the input data size, you can set `hibench.scale.profile` in `conf/hibench.conf`. Available values are tiny, small, large, huge, gigantic and bigdata. The definition of these profiles can be found in the workload's conf file i.e. `conf/workloads/micro/dfsioe.conf`
 
 ### 7. Tuning ###
 
