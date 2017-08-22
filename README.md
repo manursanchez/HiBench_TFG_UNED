@@ -1,4 +1,4 @@
-# Personalización de HiBench Suite para TFG UNED
+# Customization of HiBench Suite for UNED End-Of-Degree Project
 ## The bigdata micro benchmark suite ##
 
 
