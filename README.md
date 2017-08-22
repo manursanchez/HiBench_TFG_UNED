@@ -14,7 +14,9 @@
 ### OVERVIEW ###
 
 This fork of HiBench is created specifically to test the performance of a particular infrastructure with MapR, Cloudera and Hortonworks as part of my End-of-Degree Project. 
+
 HiBench is a big data benchmark suite that helps evaluate different big data frameworks in terms of speed, throughput and system resource utilizations.
+
 I will use the set of Hadoop including just this three big data frameworks enhanced DFSIO, Bayes and PageRank.
 
 ### Getting Started ###
