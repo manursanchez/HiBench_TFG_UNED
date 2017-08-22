@@ -111,7 +111,7 @@ function gen_report() {		# dump the result to report file
 function rmr_hdfs(){		# rm -r for hdfs
     assert $1 "dir parameter missing"
     RMDIR_CMD="fs -rm -r -skipTrash"
-    local CMD="$HADOOP_EXECUTABLE --config $HADOOP_CONF_DIR $RMDIR_CMD $1"
+    local CMD="sudo -u hdfs $HADOOP_EXECUTABLE --config $HADOOP_CONF_DIR $RMDIR_CMD $1"
     echo -e "${BCyan}hdfs rm -r: ${Cyan}${CMD}${Color_Off}" > /dev/stderr
     execute_withlog ${CMD}
 }
@@ -262,7 +262,7 @@ function run_hadoop_job(){
     local job_name=$1
     shift
     local tail_arguments=$@
-    local CMD="${HADOOP_EXECUTABLE} --config ${HADOOP_CONF_DIR} jar $job_jar $job_name $tail_arguments"
+    local CMD="sudo -u hdfs ${HADOOP_EXECUTABLE} --config ${HADOOP_CONF_DIR} jar $job_jar $job_name $tail_arguments"
     echo -e "${BGreen}Submit MapReduce Job: ${Green}$CMD${Color_Off}"
     if [ ${ENABLE_MONITOR} = 1 ]; then
         MONITOR_PID=`start_monitor`
