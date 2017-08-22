@@ -32,6 +32,8 @@ Note: For CDH, HDP and MapR users, please update `hibench.hadoop.executable`, `h
 
 ### 3. Configure `hibench.conf` ###
 
+Edit `conf/hibench.conf`：
+
 Set the below properties properly:
 
 Property        |      Meaning
