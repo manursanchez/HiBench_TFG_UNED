@@ -22,8 +22,6 @@ I will use the set of Hadoop including just this three big data frameworks enhan
 ### Getting Started ###
  * [Build HiBench](docs/build-hibench.md)
  * [Run HadoopBench](docs/run-hadoopbench.md)
- * [Run SparkBench](docs/run-sparkbench.md)
- * [Run StreamingBench](docs/run-streamingbench.md) (Spark streaming, Flink, Storm, Gearpump)
 
 ### Workloads ###
 
