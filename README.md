@@ -25,7 +25,7 @@ I will use the set of Hadoop including just this three big data frameworks enhan
 
 ### Workloads ###
 
-There are totally 19 workloads in HiBench but i have only set the configuration for the three mentioned before. This workloads are divided into 3 categories which are micro, ml(machine learning) and websearch.
+There are totally 19 workloads in HiBench but i have only set the configuration for the 3 mentioned before. This workloads are divided into 3 categories which are micro, ml(machine learning) and websearch.
 
   **Micro Bechmarks:**
 
