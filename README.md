@@ -1,7 +1,6 @@
 # Customization of HiBench Suite for UNED End-Of-Degree Project
 ## This fork of HiBench is created specifically to test the performance of a particular infrastructure with MapR, Cloudera and Hortonworks as part of my End-of-Degree Project. ##
 
-* Current version: 6.0
 * Original Homepage: https://github.com/intel-hadoop/HiBench
 * Contents:
   1. Overview
