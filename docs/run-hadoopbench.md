@@ -13,10 +13,13 @@
 
 ### 2. Configure `hadoop.conf` ###
 
+Create and edit `conf/hadoop.conf` acording to your environment：
 
-Create and edit `conf/hadoop.conf`：
-
-    cp conf/hadoop.conf.template conf/hadoop.conf
+    cp conf/hadoop.conf.cdh.template conf/hadoop.conf
+                        or
+    cp conf/hadoop.conf.hdp.template conf/hadoop.conf
+                        or
+    cp conf/hadoop.conf.mapr.template conf/hadoop.conf
 
 Set the below properties properly:
 
@@ -28,7 +31,7 @@ hibench.hadoop.configure.dir | Hadoop configuration directory. For CDH, it is /o
 hibench.hdfs.master       |    The root HDFS path to store HiBench data, i.e. hdfs://localhost:8020/user/username
 hibench.hadoop.release    |    Hadoop release provider. Supported value: apache (for MapR), cdh5, hdp
 
-Note: For CDH, HDP and MapR users, please update `hibench.hadoop.executable`, `hibench.hadoop.configure.dir` and `hibench.hadoop.release` properly.
+Note: Please update `hibench.hadoop.executable`, `hibench.hadoop.configure.dir` and `hibench.hadoop.release` properly.
 
 ### 3. Configure `hibench.conf` ###
 
@@ -41,11 +44,12 @@ Property        |      Meaning
 hibench.masters.hostnames     |     Hadoop master node in your installation. For our MapR, it is nodo1mapr
 hibench.slaves.hostnames   |        Hadoop slaves nodes in your installation. For our MapR, it is nodo2mapr,nodo3mapr,nodo4mapr
 
-Note: For CDH, HDP and MapR users, please update `hibench.masters.hostnames`, `hibench.slaves.hostnames` properly. 
+Note: Please update `hibench.masters.hostnames`, `hibench.slaves.hostnames` properly. 
 
 ### 4. Give permissions to HDFS user or MapR user ###
 
-    chown -R hdfs The HiBench installation location. For CDH and HDP installation, it is /opt/HiBench_TFG_UNED. 
+    chown -R hdfs The HiBench installation location. For CDH and HDP installation, it is /opt/HiBench_TFG_UNED.
+                                              or 
     chown -R mapr The HiBench installation location. For MapR installation, it is /opt/HiBench_TFG_UNED. 
 
 ### 5. Run a workload ###
