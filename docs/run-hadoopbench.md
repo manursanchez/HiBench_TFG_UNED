@@ -28,7 +28,7 @@ hibench.hadoop.configure.dir | Hadoop configuration directory. For CDH, it is /o
 hibench.hdfs.master       |    The root HDFS path to store HiBench data, i.e. hdfs://localhost:8020/user/username
 hibench.hadoop.release    |    Hadoop release provider. Supported value: apache (for MapR), cdh5, hdp
 
-Note: For CDH, HDP and MapR users, please update `hibench.hadoop.executable`, `hibench.hadoop.configure.dir` and `hibench.hadoop.release` properly. The default value is for Apache release.
+Note: For CDH, HDP and MapR users, please update `hibench.hadoop.executable`, `hibench.hadoop.configure.dir` and `hibench.hadoop.release` properly.
 
 ### 3. Configure `hibench.conf` ###
 
