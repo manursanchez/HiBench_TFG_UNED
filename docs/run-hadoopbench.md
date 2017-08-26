@@ -45,8 +45,8 @@ Note: For CDH, HDP and MapR users, please update `hibench.masters.hostnames`, `h
 
 ### 4. Give permissions to HDFS user or MapR user ###
 
-chown -R hdfs The HiBench installation location. For CDH and HDP installation, it is /opt/HiBench_TFG_UNED. 
-chown -R mapr The HiBench installation location. For MapR installation, it is /opt/HiBench_TFG_UNED. 
+    chown -R hdfs The HiBench installation location. For CDH and HDP installation, it is /opt/HiBench_TFG_UNED. 
+    chown -R mapr The HiBench installation location. For MapR installation, it is /opt/HiBench_TFG_UNED. 
 
 ### 5. Run a workload ###
 To run a single workload i.e. `dfsioe`.
