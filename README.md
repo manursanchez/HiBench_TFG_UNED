@@ -1,9 +1,8 @@
 # Customization of HiBench Suite for UNED End-Of-Degree Project
-## The bigdata micro benchmark suite ##
-
+## This fork of HiBench is created specifically to test the performance of a particular infrastructure with MapR, Cloudera and Hortonworks as part of my End-of-Degree Project. ##
 
 * Current version: 6.0
-* Homepage: https://github.com/intel-hadoop/HiBench
+* Original Homepage: https://github.com/intel-hadoop/HiBench
 * Contents:
   1. Overview
   2. Getting Started
@@ -12,8 +11,6 @@
 
 ---
 ### OVERVIEW ###
-
-This fork of HiBench is created specifically to test the performance of a particular infrastructure with MapR, Cloudera and Hortonworks as part of my End-of-Degree Project. 
 
 HiBench is a big data benchmark suite that helps evaluate different big data frameworks in terms of speed, throughput and system resource utilizations.
 
