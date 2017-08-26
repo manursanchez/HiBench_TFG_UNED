@@ -22,8 +22,7 @@ Set the below properties properly:
 
 Property        |      Meaning
 ----------------|--------------------------------------------------------
-hibench.hadoop.home     |      The Hadoop installation location. 
-                               For CDH, it is /opt/cloudera/parcels/CDH
+hibench.hadoop.home     |      The Hadoop installation location. For CDH, it is /opt/cloudera/parcels/CDH
 hibench.hadoop.executable  |   The path of hadoop executable. For CDH, it is /opt/cloudera/parcels/CDH/bin/hadoop
 hibench.hadoop.configure.dir | Hadoop configuration directory. For CDH, it is /opt/cloudera/parcels/CDH/lib/hadoop/etc/hadoop
 hibench.hdfs.master       |    The root HDFS path to store HiBench data, i.e. hdfs://localhost:8020/user/username
