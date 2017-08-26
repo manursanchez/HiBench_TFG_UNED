@@ -1,5 +1,6 @@
 ### Build a specific framework benchmark ###
-HiBench 6.0 supports building only benchmarks for a specific framework. 
+HiBench 6.0 supports building only benchmarks for a specific framework.
+
 For this costumization we only need to build the Hadoop benchmarks, so we can use the below command:
 
     mvn -Phadoopbench -Dspark=2.1 -Dscala=2.11 clean package
